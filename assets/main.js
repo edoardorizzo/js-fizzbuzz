@@ -1,31 +1,36 @@
-//Scrivi un programma che stampi in console i numeri da 1 a 100 ma che:
+/*
+Scrivi un programma che stampi in console i numeri da 1 a 100 ma che:
+per i multipli di 3 stampi “Fizz” al posto del numero
+per i multipli di 5 stampi “Buzz”
+per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
+
+BONUS 1:
+Crea un container nel DOM , aggiungendo un elemento html con il numero o la     stringa corretta da mostrare.
+Potete usare vari strumenti per farlo:
+`append()` oppure
+`.innerHTML`
+`.insertAdjacentHTML()`
+*/
+
+let contElm = document.querySelector('.cont');
 for (let i = 1; i <= 100; i++){
 
-    // per i multipli di 3 stampi “Fizz” al posto del numero
-    if (i % 3 == 0){
-        console.log(i, 'Fizz');
+    if (i % 3 == 0 && i % 5 == 0){
+        contElm.innerHTML += (`<div>FizzBuzz</div>`);
 
-    //per i multipli di 5 stampi “Buzz”    
+    } else if (i % 3 == 0){ 
+        contElm.innerHTML += (`<div>Fizz</div>`);
+
     } else if (i % 5 == 0){
-        console.log(i, 'Buzz');
+        contElm.innerHTML += (`<div>Buzz</div>`);
 
-    //per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.    
-    } if (i % 3 == 0 && i % 5 == 0){
-        console.log(i, "FizzBuzz");
+    } else {
+        contElm.innerHTML += (`<div>${i}</div>`);
     }
-
-    /*
-    BONUS 1:
-    Crea un container nel DOM , aggiungendo un elemento html con il numero o la     stringa corretta da mostrare.
-    Potete usare vari strumenti per farlo:
-    `append()` oppure
-    `.innerHTML`
-    `.insertAdjacentHTML()`
-    */
-    let contElm = document.querySelector('.cont');
-    contElm.innerHTML += (`<li>${i}</li>`);
 }
 
-
-
-
+/*
+BONUS 2:
+Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
+Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
+*/
