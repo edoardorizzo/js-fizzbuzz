@@ -13,19 +13,25 @@ Potete usare vari strumenti per farlo:
 */
 
 let contElm = document.querySelector('.cont');
+let div = document.querySelector('div');
+
 for (let i = 1; i <= 100; i++){
 
     if (i % 3 == 0 && i % 5 == 0){
+        console.log(i, 'FizzBuzz');
         contElm.innerHTML += (`<div>FizzBuzz</div>`);
 
     } else if (i % 3 == 0){ 
-        contElm.innerHTML += (`<div>Fizz</div>`);
+        console.log(i, 'Fizz');
+        contElm.innerHTML += (`<span>Fizz</span>`);
 
     } else if (i % 5 == 0){
-        contElm.innerHTML += (`<div>Buzz</div>`);
+        console.log(i, 'Buzz');
+        contElm.innerHTML += (`<article>Buzz</article>`);
 
     } else {
-        contElm.innerHTML += (`<div>${i}</div>`);
+        console.log(i);
+        contElm.innerHTML += (`<nav>${i}</nav>`);
     }
 }
 
@@ -33,4 +39,6 @@ for (let i = 1; i <= 100; i++){
 BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
+
+----- VEDI CSS ----
 */
