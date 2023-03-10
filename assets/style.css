@@ -26,35 +26,21 @@ div{
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
+    
+}
+
+.fizz-buzz{
     background-color: rgb(47, 156, 99);
 }
 
-span{
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
+.fizz{
     background-color: rgb(47, 103, 156);
 }
 
-article{
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
+.buzz{
     background-color: rgb(156, 98, 47);
 }
 
-nav{
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
+.number{
     background-color: rgb(156, 47, 111);
 }

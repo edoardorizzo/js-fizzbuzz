@@ -19,19 +19,19 @@ for (let i = 1; i <= 100; i++){
 
     if (i % 3 == 0 && i % 5 == 0){
         console.log(i, 'FizzBuzz');
-        contElm.innerHTML += (`<div>FizzBuzz</div>`);
+        contElm.innerHTML += (`<div class="fizz-buzz">FizzBuzz</div>`);
 
     } else if (i % 3 == 0){ 
         console.log(i, 'Fizz');
-        contElm.innerHTML += (`<span>Fizz</span>`);
+        contElm.innerHTML += (`<div class="fizz">Fizz</div>`);
 
     } else if (i % 5 == 0){
         console.log(i, 'Buzz');
-        contElm.innerHTML += (`<article>Buzz</article>`);
+        contElm.innerHTML += (`<div class="buzz">Buzz</div>`);
 
     } else {
         console.log(i);
-        contElm.innerHTML += (`<nav>${i}</nav>`);
+        contElm.innerHTML += (`<div class="number">${i}</div>`);
     }
 }
 
